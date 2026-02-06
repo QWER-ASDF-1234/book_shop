@@ -1,17 +1,31 @@
-import { createRoot } from "react-dom/client";
-import { QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { queryClient } from "./lib/queryClient";
-import { BrowserRouter } from "react-router-dom";
-
-import App from "./App.tsx";
+import "./i18n";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import { router } from "@/routes";
+import "./index.css";
 import "./reset.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import "@/utils";
+import { setupInterceptors } from "@/utils";
 
-createRoot(document.getElementById("root")!).render(
+setupInterceptors();
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 1,
+      refetchOnWindowFocus: false,
+      staleTime: 30_000,
+    },
+    mutations: {
+      retry: 0,
+    },
+  },
+});
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <QueryClientProvider client={queryClient}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-    <ReactQueryDevtools initialIsOpen={true} />
-  </QueryClientProvider>,
+    <RouterProvider router={router} />
+  </QueryClientProvider>
 );

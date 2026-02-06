@@ -1,4 +1,4 @@
-package com.green.book_shop.config;
+package com.green.book_shop.global.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

@@ -1,0 +1,15 @@
+{
+  "home": {
+    "title": "React Vite TypeScript Starter",
+    "description": "This page demonstrates the basic usage of the starter template.",
+    "language": "Language",
+    "apiExample": "React Query Example",
+    "apiStatus": "API Status",
+    "button": "Button Example",
+    "outlineButton": "Outline Button",
+    "alert": "Button clicked!"
+  },
+  "common": {
+    "loading": "Loading..."
+  }
+}

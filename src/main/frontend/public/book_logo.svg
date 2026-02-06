@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="960" viewBox="0 0 960 960" role="img" aria-label="BOOK STORE logo">
+  <defs>
+    <style>
+      .font {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+        font-weight: 700;
+      }
+      .sub {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+      }
+    </style>
+  </defs>
+
+  <!-- background (transparent) -->
+
+  <!-- ===== ICON: open book ===== -->
+  <!-- book base -->
+  <g transform="translate(0,0)">
+    <!-- spine shadow line -->
+    <path d="M480 318 C470 318 463 326 463 336 L463 388 C463 398 470 406 480 406 C490 406 497 398 497 388 L497 336 C497 326 490 318 480 318 Z"
+          fill="#1f4b99" opacity="0.20"/>
+
+    <!-- left cover/page -->
+    <path d="M230 360
+             C310 330 380 325 460 340
+             L460 440
+             C380 425 310 430 230 460
+             Z"
+          fill="#1A73E8"/>
+
+    <!-- left inner page highlight -->
+    <path d="M252 370
+             C320 348 380 346 445 358
+             L445 426
+             C380 416 320 420 252 444
+             Z"
+          fill="#FFFFFF" opacity="0.75"/>
+
+    <!-- right cover/page -->
+    <path d="M730 360
+             C650 330 580 325 500 340
+             L500 440
+             C580 425 650 430 730 460
+             Z"
+          fill="#FBBC05"/>
+
+    <!-- right inner page highlight -->
+    <path d="M708 370
+             C640 348 580 346 515 358
+             L515 426
+             C580 416 640 420 708 444
+             Z"
+          fill="#FFFFFF" opacity="0.75"/>
+
+    <!-- right edge accent -->
+    <path d="M730 360
+             C650 330 580 325 500 340
+             L500 360
+             C585 344 655 352 730 380
+             Z"
+          fill="#EA4335" opacity="0.9"/>
+
+    <!-- bottom baseline -->
+    <path d="M210 470
+             C310 430 390 425 480 445
+             C570 425 650 430 750 470
+             L750 498
+             C650 458 570 453 480 472
+             C390 453 310 458 210 498
+             Z"
+          fill="#2B3A55"/>
+
+    <!-- center notch -->
+    <path d="M480 338
+             C468 338 460 346 460 358
+             C468 352 472 350 480 350
+             C488 350 492 352 500 358
+             C500 346 492 338 480 338 Z"
+          fill="#2B3A55"/>
+  </g>
+
+  <!-- ===== SPARKLES ===== -->
+  <g>
+    <!-- simple 4-point stars -->
+    <g fill="#FBBC05">
+      <path d="M480 250 l10 22 22 10 -22 10 -10 22 -10 -22 -22 -10 22 -10z"/>
+    </g>
+    <g fill="#1A73E8" transform="translate(-110,20) scale(0.7)">
+      <path d="M480 250 l10 22 22 10 -22 10 -10 22 -10 -22 -22 -10 22 -10z"/>
+    </g>
+    <g fill="#EA4335" transform="translate(130,22) scale(0.65)">
+      <path d="M480 250 l10 22 22 10 -22 10 -10 22 -10 -22 -22 -10 22 -10z"/>
+    </g>
+    <g fill="#34A853" transform="translate(60,-10) scale(0.55)">
+      <path d="M480 250 l10 22 22 10 -22 10 -10 22 -10 -22 -22 -10 22 -10z"/>
+    </g>
+
+    <!-- dots -->
+    <circle cx="410" cy="300" r="6" fill="#EA4335"/>
+    <circle cx="550" cy="292" r="6" fill="#1A73E8"/>
+    <circle cx="505" cy="275" r="5" fill="#34A853"/>
+    <circle cx="455" cy="278" r="5" fill="#FBBC05"/>
+  </g>
+
+  <!-- ===== WORDMARK ===== -->
+  <g class="font" text-anchor="middle">
+    <!-- BOOK (Google-like colors) -->
+    <text x="480" y="640" font-size="150">
+      <tspan fill="#1A73E8">B</tspan>
+      <tspan fill="#EA4335">O</tspan>
+      <tspan fill="#FBBC05">O</tspan>
+      <tspan fill="#34A853">K</tspan>
+    </text>
+
+    <!-- STORE -->
+    <text x="480" y="735" font-size="72" class="sub" fill="#2B3A55">STORE</text>
+  </g>
+</svg>

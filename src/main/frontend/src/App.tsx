@@ -1,9 +1,13 @@
-function App() {
+// import BasicLayout from "./components/layout/BasicLayout";
+import ManagerLayout from "./components/layouts/ManagerLayout";
+
+const App = () => {
   return (
     <>
-      <div>sfdjhklsfdajhklsfda</div>
+      {/* <BasicLayout /> */}
+      <ManagerLayout />
     </>
   );
-}
+};
 
 export default App;

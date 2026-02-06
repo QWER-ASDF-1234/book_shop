@@ -1,0 +1,15 @@
+{
+  "home": {
+    "title": "React Vite TypeScript 스타터",
+    "description": "이 페이지는 스타터 템플릿의 기본 사용 예시입니다.",
+    "language": "언어",
+    "apiExample": "React Query 예시",
+    "apiStatus": "API 상태",
+    "button": "버튼 예시",
+    "outlineButton": "아웃라인 버튼",
+    "alert": "버튼이 클릭되었습니다!"
+  },
+  "common": {
+    "loading": "로딩 중..."
+  }
+}
